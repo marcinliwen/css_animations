@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>spotkamysieza</title>
+    
+</head>
+<body>
+<div class="grid">
+    <div class="row">
+        <div class="header"><p>Spotkamy się za:</p></div>
+    </div>
+    <div class="row">
+        <div class="sky"> 
+            <div class="rect-1 position-10"></div>
+            <div class="rect-2 position-10"></div>
+            <div class="rect-3 position-10"></div>
+            <div class="rect-4 position-10"></div>
+            <div class="circle position-10"></div> 
+            <div class="cloud-1 position-20">
+                <div class="el1-1 color_white "></div>
+                <div class="el1-2 color_white "></div>
+                <div class="el1-3 color_white "></div>
+            </div> 
+            <div class="cloud-2 position-5">
+                <div class="el2-1 color_blue "></div>
+                <div class="el2-2  color_blue "></div>
+                <div class="el2-3 color_blue "></div>
+            </div>
+            <div class="mountine1"></div>
+            <div class="mountine2"></div>
+            <div class="mountine3"></div>
+            <div class="palace"></div>
+            <div class="clock" id="clock">
+                    <div class="timer_block days " id="days"><p></p></div>
+                    <div class="timer_block hours " id="hours"><p></p></div>                            
+                    <div class="timer_block minutes " id="minutes"><p></p></div>
+                    <div class="timer_block seckonds " id="seconds"><p></p></div>  
+            </div>
+            <div id="miejsce"></div>
+        </div> 
+           
+    </div>
+
+    <div class="set_date">
+        <div class="line1"></div>
+        <div class="circle_border">
+            <button type="button" onclick="showtime()" class="circle_button"></button> 
+        </div>
+    </div>
+    <div id="set_time_panel">
+        <div class="left_panel"></div>
+                   
+    </div> 
+</div>
+<div  id="set_time">
+        <p>set next mitting</p>  
+        <div class="form">
+            
+            <div class="take_input">
+                
+                <label for="nextdate">date</label>
+                <input id="nextdate" type="date" name="next"  required>
+                
+            </div>
+            <div class="take_input">
+                <label for="time">time</label>
+                <input type="time" name="time" id="time" required value="">
+            </div>
+        
+            <div class="take_input">
+                <label for="place">miejsce</label>
+                <input type="text" name="miejsce" id="place" placeholder="w Zielonej Górze">
+            </div>
+            <div class="take_input">
+                <input type="submit" name="submit" value="prześlij" id="przeslij" onclick="alerttime()">
+            </div>
+           
+        </div>
+</div>   
+<script src="scripts/main.js"> </script>
+</body>
+</html>
