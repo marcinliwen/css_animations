@@ -56,7 +56,7 @@ function alerttime(){
     /*
     set next miting date
     */
-        var dataspotkania = new Date("2018-04-17T00:20:00Z");
+        var dataspotkania = new Date("2020-04-17T00:20:00Z");
       
         var x = setInterval(function() {           
             var now = new Date().getTime();           
